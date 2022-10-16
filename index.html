@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="First web assignment">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="./images/site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <section class="hero">
+    <div class="text-overlay">
+    </div>
+    <div class="picture">
+      <picture>
+        <source media="(min-width: 769px)" srcset="images/hero-1920.jpg">
+        <source media="(min-width: 381px)" srcset="images/hero-768.jpg">
+        <source media="(max-width: 380px)" srcset="images/hero-380.jpg">
+        <img src="images/hero-768.jpg" alt="ocean painting">
+      </picture>
+      <h1>Caroline's Art</h1>
+      <p>Lorem Ipsum</p>
+    </div>
+  </section>
+
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a>Home</a>
+        </li>
+        <li><a href="about/">About</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <img src="images/blue-wave-900.jpg" alt="blue textured wave" width="900" height="900">
+      <h2>Article 1</h2>
+      <p><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Exercitationem consequatur vel
+        voluptates consequuntur
+        quidem dolor itaque obcaecati? Modi consectetur illum perspiciatis sunt cumque, deleniti itaque praesentium eius
+        distinctio adipisci quas.</p>
+      <a class="button">Buy Now</a>
+
+
+    </article>
+    <article>
+      <h2>Article 2</h2>
+      <p><em>Lorem ipsum</em> dolor sit, amet consectetur adipisicing elit. Expedita perspiciatis optio odio deleniti?
+        Vitae ex
+        adipisci, sunt fugiat eos rem fuga natus praesentium temporibus pariatur neque recusandae repellat corrupti
+        quas.</p>
+      <a class="button">Learn More</a>
+    </article>
+  </main>
+
+  <section class="cards">
+
+    <a class="card">
+      <img src="images/about-me-480.jpg" alt="about me" width="480" height="480">
+      <p>Learn about me</p>
+    </a>
+    <a class="card">
+      <img src="images/paintings-and-prints-480.jpg" alt="my paintings and prints" width="480" height="480">
+      <p>Take a look at my work</p>
+    </a>
+    <a class="card">
+      <img src="images/blog-480.jpg" alt="my blog" width="480" height="480">
+      <p>Check out my blog</p>
+    </a>
+    <a class="card">
+      <img src="images/contact-480.jpg" alt="Place to contact me" width="480" height="480">
+      <p>Contact me</p>
+    </a>
+  </section>
+
+  <aside>
+    <p>This is an aside</p>
+  </aside>
+  <footer>
+    <p>This is the footer</p>
+  </footer>
+</body>
+
+</html>
