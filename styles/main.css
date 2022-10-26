@@ -17,6 +17,8 @@ body {
   font-family: "Alice", serif;
   line-height: 1.5;
   color: var(--font-color);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -156,13 +158,17 @@ img[src$="svg"] {
 }
 
 .cards {
-  display: flex;
   gap: 1rem;
   margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .card {
   flex: 1 1 0;
+  margin: 1rem;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
 }
@@ -191,13 +197,6 @@ img[src$="svg"] {
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0)
   );
-}
-
-@media (min-width: 381px) {
-  picture img {
-    height: 100vh;
-    object-fit: cover;
-  }
 }
 
 .hero {
@@ -275,4 +274,24 @@ picture img {
   height: 100%;
   object-fit: cover;
   object-position: left center;
+}
+
+@media (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 40%;
+  }
+}
+
+@media (max-width: 850px) {
+  .cards {
+    /*     flex-wrap: nowrap; */
+  }
+  .card {
+    flex: 1 1 50%;
+  }
 }
