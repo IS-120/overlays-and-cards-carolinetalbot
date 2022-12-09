@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="../styles/main.css">
 
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
@@ -12,12 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="contact">
   <title>Contact us</title>
-  <link rel="stylesheet" href="../syles/normalize.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/main.css">
 </head>
 
 <body>
@@ -31,7 +26,44 @@
     </nav>
   </header>
   <h1>Contact</h1>
-  <img src="../images/brush.svg" alt="line drawing of a paintbrush">
 </body>
+<form>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+  <div class="fieldset-wrapper">
+    <fieldset>
+      <legend>Reason for Contact</legend>
+
+      <input type="radio" id="custom" name="reason" value="custom">
+      <label for="custom">Custom Art Request</label>
+
+      <input type="radio" id="purchases" name="reason" value="purchases">
+      <label for="purchases">Purchases/Returns</label>
+
+      <input type="radio" id="questions" name="reason" value="questions">
+      <label for="questions">Questions</label>
+
+      <input type="radio" id="comments" name="reason" value="comments">
+      <label for="comments">Comments</label>
+
+      <input type="radio" id="other" name="reason">
+      <label for="other">Other</label>
+
+    </fieldset>
+  </div>
+  <div class="fieldset-wrapper">
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments" rows="3" placeholder="Write your comments here!"></textarea>
+    <button>Send</button>
+
+  </div>
+</form>
+<script>
+  document.querySelector(".menu-icon").addEventListener("click", function () {
+    this.parentElement.classList.toggle("close");
+  });
+</script>
 
 </html>
